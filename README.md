@@ -54,6 +54,23 @@ Nesse projeto, você será capaz de:
 
 ---
 
+## Instruções para testar suas queries
+
+Para executar localmente os testes, é preciso escrever o seguinte no seu terminal:
+```sh
+MYSQL_USER=<SEU_NOME_DE_PESSOA_USUARIA> MYSQL_PASSWORD=<SUA SENHA> HOSTNAME=<NOME_DO_HOST> PORT=<PORTA> npm test
+```
+
+Ou seja, suponha que para poder acessar a base de dados feita neste projeto você tenha `root` como seu nome de pessoa usuária, `password` como senha, `localhost` como host e `1337` como porta. Logo, você executaria:
+```sh
+MYSQL_USER=root MYSQL_PASSWORD=password HOSTNAME=localhost PORT=1337 npm test
+```
+
+Usando o exemplo anterior de base, suponha que você não tenha setado uma senha para `root` e esteja usando a porta padrão (3306). Neste caso, você executaria:
+```sh
+MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost PORT= npm test
+  ```
+
 ## Lista de Requisitos
 
 ## Desafios Iniciais
